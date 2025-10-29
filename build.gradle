@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    // Add NeoForge/Forge Gradle plugin lines here when ready.
+}
+
+group = 'com.kpower'
+version = '1.0.0'
+sourceCompatibility = JavaVersion.toVersion((project.findProperty('java_version') ?: '17'))
+
+repositories {
+    mavenCentral()
+    // Add Forge/NeoForge maven repos if necessary
+}
+
+dependencies {
+    // Add implementation dependencies (NeoForge/Forge) here when deciding the plugin
+}
+
+jar {
+    manifest { attributes 'Implementation-Title': 'KPower', 'Implementation-Version': version }
+}
